@@ -7,10 +7,10 @@ import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 
-export default function MyAppBar() {
+export default function MyAppBar({ title, color }) {
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
+      <AppBar position="static" color={color}>
         <Toolbar>
           <IconButton
             size="large"
@@ -22,7 +22,7 @@ export default function MyAppBar() {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            Adote Fácil
+            {title}
           </Typography>
           <Button color="inherit">Login</Button>
         </Toolbar>
