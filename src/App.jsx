@@ -1,5 +1,6 @@
 import MyAppBar from "./components/AppBar";
 import {Grid} from "@mui/material";
+import PetDetails from "./components/PetDetails";
 
 function App() {
 
@@ -19,6 +20,9 @@ function App() {
           ))
         }
       </Grid>
+    
+      <PetDetails/>
+
     </>
   )
 }
