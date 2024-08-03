@@ -1,30 +1,17 @@
 import MyAppBar from "./components/AppBar";
-import {Grid} from "@mui/material";
+import { Grid } from "@mui/material";
 import PetDetails from "./components/PetDetails";
+import { LIST_PETS } from "./data/Data";
 
 function App() {
-
-  const pets = [
-    "Gato 1", "Pet 2", "Cachorro 3", "Pet 4",
-    "Gato 1", "Pet 2", "Cachorro 3", "Pet 4",
-  ]
+  const items = LIST_PETS;
 
   return (
     <>
-      <Grid container spacing={2}>
-        {
-          pets.map((pet, index) => (
-            <Grid item xs={12} md={6} sm={12}>
-              <MyAppBar title={pet} color={index % 2 === 0 ? "success" : 'error'} />
-            </Grid>
-          ))
-        }
-      </Grid>
-    
-      <PetDetails/>
-
+      <MyAppBar title={"pet"} />
+      <PetDetails petName={LIST_PETS[0].name} />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
