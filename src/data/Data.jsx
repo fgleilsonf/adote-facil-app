@@ -24,7 +24,7 @@ const LIST_PETS = [
     image: 'https://img.freepik.com/fotos-gratis/adoravel-cachorro-basenji-marrom-e-branco-sorrindo-e-dando-mais-uns-cinco-isolado-no-branco_346278-1657.jpg?size=626&ext=jpg&ga=GA1.1.1371518722.1722556800&semt=sph'
   },
   {
-    name: "pet1",
+    name: "pet3",
     age: 12,
     specie: "cachorro",
     race: "vira-lata",
@@ -36,7 +36,7 @@ const LIST_PETS = [
     image:'https://portaledicase.com/wp-content/uploads/2023/11/Gato-nomes.jpg'
   },
   {
-    name: "pet2",
+    name: "pet4",
     age: 21,
     specie: "gato",
     race: "siames",
