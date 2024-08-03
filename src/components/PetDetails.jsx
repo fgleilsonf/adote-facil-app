@@ -11,6 +11,7 @@ import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 import CloseIcon from "@mui/icons-material/Close";
 import Slide from "@mui/material/Slide";
+import PetsCards from "./PetsCards";
 
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
@@ -38,8 +39,8 @@ export default function PetDetails({
 
   return (
     <React.Fragment>
-      <Button variant="outlined" onClick={handleClickOpen}>
-        Open full-screen dialog
+      <Button onClick={handleClickOpen}>
+        <PetsCards/>
       </Button>
       <Dialog
         fullScreen
@@ -65,15 +66,15 @@ export default function PetDetails({
         <List>
           <Typography>
             {petName}
-            {petAge}
-            {petSpecie}
-            {petRace}
             {petGender}
+            {petAge}
+            {petRace}
             {petDescription}
             {petCharacteristics}
             {petSize}
           </Typography>
         </List>
+        <button>me adote</button>
       </Dialog>
     </React.Fragment>
   );
