@@ -5,10 +5,10 @@ const LIST_PETS = [
     specie: "cachorro",
     race: "vira-lata",
     gender: true,
-    discription:
-      "Esse é um cachorrinho que estou sem condiçãp de cuidar no momento",
+    description:
+      "Esse é um cachorrinho que estou sem condição de cuidar no momento",
     characteristics: "Comportadinho",
-    size: "pequeno",
+    size: "Pequeno",
   },
   {
     name: "pet2",
@@ -16,7 +16,7 @@ const LIST_PETS = [
     specie: "gato",
     race: "siames",
     gender: false,
-    discription: "Esse é um gatão que estou sem condição de cuidar no momento",
+    description: "Esse é um gatão que estou sem condição de cuidar no momento",
     characteristics: "Calmo",
     size: "médio",
   },
@@ -26,8 +26,8 @@ const LIST_PETS = [
     specie: "cachorro",
     race: "vira-lata",
     gender: true,
-    discription:
-      "Esse é um cachorrinho que estou sem condiçãp de cuidar no momento",
+    description:
+      "Esse é um cachorrinho que estou sem condição de cuidar no momento",
     characteristics: "Comportadinho",
     size: "pequeno",
   },
@@ -37,7 +37,7 @@ const LIST_PETS = [
     specie: "gato",
     race: "siames",
     gender: false,
-    discription: "Esse é um gatão que estou sem condição de cuidar no momento",
+    description: "Esse é um gatão que estou sem condição de cuidar no momento",
     characteristics: "Calmo",
     size: "médio",
   },
