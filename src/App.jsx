@@ -16,7 +16,7 @@ function App() {
     <br /> <br />
       <Grid container spacing={5} sx={{display:"flex",justifyContent:"center"}}>
         {
-          pets.map((pet, index) => (
+          items.map((pet, index) => (
             <Grid item xs={6} md={2} sm={8} >
 
         <PetsCards></PetsCards>
