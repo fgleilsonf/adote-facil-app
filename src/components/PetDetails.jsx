@@ -18,6 +18,7 @@ const Transition = React.forwardRef(function Transition(props, ref) {
 });
 
 export default function PetDetails({
+  pet,
   petName,
   petAge,
   petSpecie,
@@ -39,9 +40,7 @@ export default function PetDetails({
 
   return (
     <React.Fragment>
-      <Button onClick={handleClickOpen}>
-        <PetsCards/>
-      </Button>
+      <PetsCards pet={pet} onClick={handleClickOpen} />
       <Dialog
         fullScreen
         open={open}
@@ -64,9 +63,9 @@ export default function PetDetails({
           </Toolbar>
         </AppBar>
         <List>
-          <Typography>
-            {petName}
-            {petGender}
+          <Typography variant="h4">
+            {  pet.name            }
+            {pet.gender}
             {petAge}
             {petRace}
             {petDescription}

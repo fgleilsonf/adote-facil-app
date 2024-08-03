@@ -18,20 +18,22 @@ const bull = (
 );
 
 
-export default function PetsCards({ pet }) {
+export default function PetsCards({ pet, onClick }) {
+  console.log('pet:', pet)
   return (
-    <Card sx={{ minWidth:112,minHeight:90, backgroundColor:"#dcdcdc", borderRadius:"20px", boxShadow:"0px 0px 28px #3c3c3c23"}}>
+    <Card onClick={onClick} 
+    sx={{ minWidth:112,minHeight:90, cursor: 'pointer', backgroundColor:"#dcdcdc", borderRadius:"20px", boxShadow:"0px 0px 28px #3c3c3c23"}}>
 
 <CardMedia
         sx={{ height: 150 }}
-        image={pet.image}
+        image={pet?.image}
         title="green iguana"
       />
       
        
       <CardContent>
         <Typography variant="h5" component="div">
-             {pet.name}
+             {pet?.name}
         </Typography>
         <Typography sx={{ mb: 5.0}} color="text.secondary">
         
