@@ -4,7 +4,7 @@ const LIST_PETS = [
     age: 12,
     specie: "cachorro",
     race: "vira-lata",
-    gender: true,
+    gender: true, // true for male and false for female / verdadeiro para masculino e falso para feminino
     description:
       "Esse é um cachorrinho que estou sem condição de cuidar no momento",
     characteristics: "Comportadinho",
