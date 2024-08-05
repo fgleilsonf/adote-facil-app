@@ -6,6 +6,7 @@ import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { CardMedia } from '@mui/material';
+import { Link } from 'react-router-dom';
 
 const bull = (
   <Box
@@ -52,4 +53,6 @@ export default function PetsCards({ pet, onClick }) {
     </Card>
   );
 }
+
+
 
