@@ -8,6 +8,7 @@ import Typography from "@mui/material/Typography";
 import { CardMedia } from "@mui/material";
 import MaleIcon from "@mui/icons-material/Male";
 import FemaleIcon from "@mui/icons-material/Female";
+import { Link } from 'react-router-dom';
 
 const bull = (
   <Box
@@ -45,3 +46,5 @@ export default function PetsCards({ pet, onClick }) {
     </Card>
   );
 }
+
+
