@@ -13,7 +13,7 @@ function App() {
 
   return (
     <>
-      
+
       <MyAppBar title={"Adote Fácil"} />
       <br /> <br />
       <Grid
@@ -22,7 +22,7 @@ function App() {
         sx={{ display: "flex", justifyContent: "center" }}
       >
         {
-          /* 
+          /*
           Grid para os cards dos animais na página principal
           */
           items.map((pet) => (
