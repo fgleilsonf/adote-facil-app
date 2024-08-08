@@ -12,22 +12,19 @@ import Typography from "@mui/material/Typography";
 import CloseIcon from "@mui/icons-material/Close";
 import Slide from "@mui/material/Slide";
 import PetsCards from "./PetsCards";
+import { Stack } from "@mui/material";
+import ImageList from "@mui/material/ImageList";
+import ImageListItem from "@mui/material/ImageListItem";
+import MaleIcon from '@mui/icons-material/Male';
+import FemaleIcon from '@mui/icons-material/Female'; 
+import '../assets/styles/PetDetails.css';
+
 
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
 });
 
-export default function PetDetails({
-  pet,
-  petName,
-  petAge,
-  petSpecie,
-  petRace,
-  petGender,
-  petDescription,
-  petCharacteristics,
-  petSize,
-}) {
+export default function PetDetails({ pet }) {
   const [open, setOpen] = React.useState(false);
 
   const handleClickOpen = () => {
@@ -39,6 +36,8 @@ export default function PetDetails({
   };
 
   return (
+    //Puxando os cards dos pets como um "botão" para a aba de detalhes dos pets
+
     <React.Fragment>
       <PetsCards pet={pet} onClick={handleClickOpen} />
       <Dialog
@@ -62,16 +61,21 @@ export default function PetDetails({
             </Typography>
           </Toolbar>
         </AppBar>
-        <List>
-          <Typography variant="h4">
-            {  pet.name            }
-            {pet.gender}
-            {petAge}
-            {petRace}
-            {petDescription}
-            {petCharacteristics}
-            {petSize}
-          </Typography>
+        <List className="image">
+          <img src={pet.image} className="pet-image" />
+          <Stack className="basic-info">
+            <Typography variant="h4">{pet.name} {pet.gender === true? <MaleIcon /> : <FemaleIcon />} </Typography>
+            <Typography variant="h4">{pet.age} Anos</Typography>
+          </Stack>
+          <Typography variant="h4" className="race">{pet.race}</Typography>
+          <Stack className="description">
+            <Typography variant="h5">Descrição:</Typography>
+            <Typography variant="p">{pet.description}</Typography>
+          </Stack>
+          <Stack>
+            <Typography variant="h5">Características:</Typography>
+            <Typography variant="p">{pet.characteristics}</Typography>
+          </Stack>
         </List>
         <button>me adote</button>
       </Dialog>
