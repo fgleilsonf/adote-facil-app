@@ -35,6 +35,13 @@ export default function PetsCards({ pet, onClick }) {
     >
       <CardMedia sx={{ height: 150 }} image={pet.image} title= {pet.specie} />
 
+<CardMedia
+        sx={{ height: 150 }}
+        image={pet?.image}
+        title="Cards"
+      />
+      
+       
       <CardContent>
         <Typography variant="h5" component="div">
           {pet.name} {pet.gender === true ? <MaleIcon /> : <FemaleIcon />}
