@@ -35,7 +35,7 @@ section{
     align-items: center;
     justify-content: center;
     
-    
+
 }
 .container .text{
     position: relative;
@@ -92,7 +92,7 @@ section{
     
 }
 .boxImg{
-    
+
     bottom: -20vh;
     right: -400px;
 }
@@ -104,14 +104,14 @@ section{
     position: absolute;
 }
 .boxImg .img2{
-    
+
     right: auto;
     width: 500px;
     height: 500px;
 }
+
     
-    
-    
-  
+
+
 
 
