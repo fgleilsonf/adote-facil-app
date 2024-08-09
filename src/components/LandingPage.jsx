@@ -18,9 +18,7 @@ function LandingPage() {
 
     <MyAppBar title={"Adote Fácil"} />
     <section>
-      <div className="CI">
-        <img src={Banner} className='img2'/>
-      </div>
+      
       <div className="container">
         <div className="text">
         <h1>Dê espaço para o seu melhor amigo <br /> <span>venha conhecer nossa família</span></h1>
@@ -30,11 +28,14 @@ function LandingPage() {
         </div>
         
         <div className="boxImg">
+          <img src={Banner} className='img2'/>
           <img src={Pets} className='img1'/>
+          
         </div>
         </div>
       </div>
       <div className='img_mobile'>
+      
       <img src={Pets} className='img1_mobile'/>
       </div>
     </section>
