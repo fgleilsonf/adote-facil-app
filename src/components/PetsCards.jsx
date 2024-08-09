@@ -28,7 +28,7 @@ export default function PetsCards({ pet, onClick }) {
 <CardMedia
         sx={{ height: 150 }}
         image={pet?.image}
-        title="green iguana"
+        title="Cards"
       />
       
        
