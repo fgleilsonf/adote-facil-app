@@ -1,10 +1,8 @@
 import MyAppBar from "./components/AppBar";
-import { Grid } from "@mui/material";
-import PetsCards from "./components/PetsCards";
+import {Grid} from "@mui/material";
 import PetDetails from "./components/PetDetails";
-import RoutesComponent from './routes.jsx'
 
-import { LIST_PETS } from "./data/Data";
+import {LIST_PETS} from "./data/Data";
 
 function App() {
   const items = LIST_PETS;
@@ -13,13 +11,14 @@ function App() {
 
   return (
     <>
-
-      <MyAppBar title={"Adote Fácil"} />
-      <br /> <br />
+      <MyAppBar title={"Adote Fácil"}/>
       <Grid
         container
-        spacing={5}
-        sx={{ display: "flex", justifyContent: "center" }}
+        spacing={2}
+        sx={{display: "flex", justifyContent: "center"}}
+        p={2}
+        mt={'50px'}
+        width={'100%'}
       >
         {
           /*
@@ -27,7 +26,7 @@ function App() {
           */
           items.map((pet) => (
             <Grid item xs={6} md={2} sm={8} key={pet.name}>
-              <PetDetails pet={pet} />
+              <PetDetails pet={pet}/>
             </Grid>
           ))
         }

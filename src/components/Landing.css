@@ -6,7 +6,7 @@
 }
 body{
     box-sizing: border-box;}
-    
+
 
 section{
     position: relative;
@@ -21,12 +21,12 @@ section{
     overflow-x: hidden;
     box-sizing: border-box;
 }
+
 .img_mobile{
     display: none;
 }
 
 .container{
-    position: relative;
     width: 100%;
     display: flex;
     align-items: center;
@@ -34,15 +34,13 @@ section{
     box-sizing: border-box;
     align-items: center;
     justify-content: center;
-    
-
 }
+
 .container .text{
     position: relative;
     max-width: 600px;
-    margin-right: 20px;
-    
 }
+
 .container .text h1{
     color: #ff8200;
     font-size: 3.0em;
@@ -52,6 +50,7 @@ section{
     font-weight: 800;
     font-style: normal;
 }
+
 .container .text h1 span{
     font-size: 0.8em;
     font-weight: 400;
@@ -60,16 +59,17 @@ section{
     font-weight: 600;
     font-style: normal;
 }
+
 .bts{
     margin-top: 80px;
-    
+
 }
 .Bt{
     display: flex;
     flex-direction: column;
     margin-top: 50px;
     padding: 15px 2em;
-    width: 3.3in;
+    width: 250px;
     align-items: center;
     justify-content: center;
     background-color: #ff8200;
@@ -89,7 +89,7 @@ section{
     background: #fff2e5;
     color: #ff8200;
 
-    
+
 }
 .boxImg{
 
