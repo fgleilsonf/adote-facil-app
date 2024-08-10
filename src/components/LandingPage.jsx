@@ -34,7 +34,7 @@ function LandingPage() {
           <Box mt={10} display={'flex'} flexDirection={'column'}>
             <Typography
               color={'#ff8200'}
-              fontSize={'2.6em'}
+              fontSize={'2.4em'}
               fontWeight={'700'}
               fontFamily={'Poppins, sans-serif'}
               fontStyle={'normal'}
@@ -60,10 +60,10 @@ function LandingPage() {
                 }
               }}/>
             </Box>
-            <Box position={'absolute'} bottom={18} right={0}>
+            <Box position={'absolute'} bottom={'93px'} right={0}>
               <Avatar src={Pets} className='img1_mobile' variant={'square'} sx={{
                 width: '100%',
-                height: 400,
+                height: 350,
                 objectFit: 'contain'
               }}/>
             </Box>
