@@ -60,7 +60,7 @@ function LandingPage() {
                 }
               }}/>
             </Box>
-            <Box position={'absolute'} bottom={'23px'} right={0}>
+            <Box position={'absolute'} bottom={'13px'} right={0}>
               <Avatar src={Pets} className='img1_mobile' variant={'square'} sx={{
                 width: '100%',
                 height: 350,
