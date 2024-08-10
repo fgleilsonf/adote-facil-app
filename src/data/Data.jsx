@@ -36,7 +36,7 @@ const LIST_PETS = [
     image:'https://portaledicase.com/wp-content/uploads/2023/11/Gato-nomes.jpg'
   },
   {
-    name: "Gleison",
+    name: "Gleilson",
     age: 2,
     specie: "gato",
     race: "Maine Coon",
@@ -47,7 +47,7 @@ const LIST_PETS = [
     image:'https://blog-static.petlove.com.br/wp-content/uploads/2019/06/shutterstock_632318627.jpg'
   },
   {
-    name: "Brenda",
+    name: "Bela",
     age: 3,
     specie: "cachorro",
     race: "pit-bull",
