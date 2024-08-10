@@ -16,9 +16,9 @@ import { Stack } from "@mui/material";
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
 import MaleIcon from '@mui/icons-material/Male';
-import FemaleIcon from '@mui/icons-material/Female'; 
+import FemaleIcon from '@mui/icons-material/Female';
 import '../assets/styles/PetDetails.css';
-
+import { Link } from 'react-router-dom';
 
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
