@@ -1,7 +1,7 @@
 import MyAppBar from "./components/AppBar";
 import { Grid } from "@mui/material";
 import PetsCards from "./components/PetsCards";
-import PetDetails from "./components/PetDetails";
+import PetDetails from "./components/PetDetails";import RoutesComponent from './routes.jsx'
 
 import { LIST_PETS } from "./data/Data";
 
@@ -12,6 +12,7 @@ function App() {
 
   return (
     <>
+      
       <MyAppBar title={"Adote Fácil"} />
       <br /> <br />
       <Grid
