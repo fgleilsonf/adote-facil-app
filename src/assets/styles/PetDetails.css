@@ -4,14 +4,69 @@
     box-sizing: border-box;
 }
 
-.basic-info {
-    background-color: tomato;
-}
-
-.image {
-    padding: 100;
-}
-
 .pet-image {
+    object-fit: contain;
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
 
+
+.basic-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    padding-right: 0px;
+  }
+  
+.race {
+
+    background-color: #0f8bdb;
+    color: white;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 10px 20px;
+    text-align: right;
+    max-width: fit-content;
+    width: 100%;
+    margin-left: auto;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    position: absolute;
+    right: 0;
+
+
+  }
+  
+.description, .characteristics {
+    margin: 0.5rem;
+  }
+
+.male{
+    color: #0f8bdb;
+  }
+ 
+.female{
+    color: #db0fb9;
+  }
+  
+.Bt {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    padding: 15px 2em;
+    width: 3.3in;
+    align-items: center;
+    justify-content: center;
+    background-color: #ff8200;
+    border: none;
+    border-radius: 30px;
+    transition: 0.2s ease-in-out;
+    font-size: 22px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    color: #fff;
+    box-shadow: 3px 4px 20px rgba(1, 13, 26, 0.301);
 }

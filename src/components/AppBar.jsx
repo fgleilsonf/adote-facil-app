@@ -6,6 +6,7 @@ import IconButton from '@mui/material/IconButton';
 import {styled} from '@mui/material/styles';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
+import {useNavigate} from "react-router-dom";
 
 const DRAWER_WIDTH = 240;
 
@@ -29,6 +30,7 @@ const AppBar = styled(MuiAppBar, {
 
 const MyToolbar = ({title}) => {
   const isMobile = useMediaQuery('(max-width:600px)');
+  const navigate = useNavigate();
 
   return (
     <AppBar
@@ -51,6 +53,7 @@ const MyToolbar = ({title}) => {
             color="inherit"
             aria-label="open drawer"
             onClick={() => {
+              navigate('/')
             }}
             sx={{
               marginRight: '36px',
@@ -63,7 +66,9 @@ const MyToolbar = ({title}) => {
           {/*    background: '#FFF',*/}
           {/*  }}*/}
           {/*>A</Avatar>*/}
-          <Typography fontWeight={'bold'} fontSize={'14px'} color={'#FFF'}>
+          <Typography fontWeight={'bold'} fontSize={'14px'} color={'#FFF'} onClick={() => {
+            navigate('/')
+          }}>
             {title}
           </Typography>
         </Stack>

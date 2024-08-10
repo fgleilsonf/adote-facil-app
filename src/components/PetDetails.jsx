@@ -15,10 +15,10 @@ import PetsCards from "./PetsCards";
 import { Stack } from "@mui/material";
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
-import MaleIcon from '@mui/icons-material/Male';
-import FemaleIcon from '@mui/icons-material/Female';
-import '../assets/styles/PetDetails.css';
-import { Link } from 'react-router-dom';
+import MaleIcon from "@mui/icons-material/Male";
+import FemaleIcon from "@mui/icons-material/Female";
+import "../assets/styles/PetDetails.css";
+import { Link } from "react-router-dom";
 
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
@@ -36,8 +36,6 @@ export default function PetDetails({ pet }) {
   };
 
   return (
-    //Puxando os cards dos pets como um "botão" para a aba de detalhes dos pets
-
     <React.Fragment>
       <PetsCards pet={pet} onClick={handleClickOpen} />
       <Dialog
@@ -45,6 +43,7 @@ export default function PetDetails({ pet }) {
         open={open}
         onClose={handleClose}
         TransitionComponent={Transition}
+        className="pet-dialog"
       >
         <AppBar sx={{ position: "relative" }}>
           <Toolbar>
@@ -61,23 +60,39 @@ export default function PetDetails({ pet }) {
             </Typography>
           </Toolbar>
         </AppBar>
-        <List className="image">
+        <Stack className="content">
           <img src={pet.image} className="pet-image" />
-          <Stack className="basic-info">
-            <Typography variant="h4">{pet.name} {pet.gender === true? <MaleIcon /> : <FemaleIcon />} </Typography>
-            <Typography variant="h4">{pet.age} Anos</Typography>
+          <Stack
+            className="basic-info"
+            direction="row"
+            alignItems="center"
+            spacing={2}
+          >
+            <Typography variant="h6">
+              {pet.name}{" "}
+              {pet.gender === true ? (
+                <MaleIcon className="male" />
+              ) : (
+                <FemaleIcon className="female" />
+              )}
+            </Typography>
+            <Typography variant="h6">{pet.age} Anos</Typography>
+
+            <Typography variant="h7" className="race">
+              {pet.race}
+            </Typography>
           </Stack>
-          <Typography variant="h4" className="race">{pet.race}</Typography>
+
           <Stack className="description">
             <Typography variant="h5">Descrição:</Typography>
             <Typography variant="p">{pet.description}</Typography>
           </Stack>
-          <Stack>
+          <Stack className="characteristics">
             <Typography variant="h5">Características:</Typography>
             <Typography variant="p">{pet.characteristics}</Typography>
           </Stack>
-        </List>
-        <button>me adote</button>
+          <button className="Bt">Me adote</button>
+        </Stack>
       </Dialog>
     </React.Fragment>
   );
