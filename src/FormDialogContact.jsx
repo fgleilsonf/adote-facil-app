@@ -41,7 +41,7 @@ const FormDialogContact = ({handleClose}) => {
             Informe seus dados! Em breve entraremos em contato!
           </DialogContentText>
           <Grid container spacing={2}>
-            <Grid item sm={12}>
+            <Grid item sm={12} md={12}>
               <TextField
                 autoFocus
                 required
@@ -54,7 +54,7 @@ const FormDialogContact = ({handleClose}) => {
                 variant="outlined"
               />
             </Grid>
-            <Grid item sm={12}>
+            <Grid item sm={12} md={12}>
               <PatternFormat
                 format="(##) #####-####"
                 name="whatsapp"
@@ -64,7 +64,7 @@ const FormDialogContact = ({handleClose}) => {
                 customInput={TextField}
               />
             </Grid>
-            <Grid item sm={12}>
+            <Grid item sm={12} md={12}>
               <TextField
                 autoFocus
                 required
