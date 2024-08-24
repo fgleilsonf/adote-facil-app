@@ -123,9 +123,6 @@ section{
     
 }
 @media only screen and (max-width: 1060px){
-    #box{
-        background-color: red;
-    }
     #text1 {
         font-size: 40px;
     }
@@ -138,9 +135,7 @@ section{
     }
 }
 @media only screen and (min-height: 1000px){
-    #box{
-        background-color: blue;
-    }
+
     #conteúdo{
         flex-direction: column;
     }
@@ -162,9 +157,7 @@ section{
 
 }
 @media only screen and (max-height: 600px){
-    #box{
-        background-color: yellowgreen;
-    }
+
     #text1{
         font-size: 2em;
     }
@@ -203,9 +196,7 @@ section{
     }
 }
 @media only screen and (max-width: 500px){
-    #box{
-        background-color: brown;
-    }
+ 
     .img1_mobile{
         right: 80px;
     }

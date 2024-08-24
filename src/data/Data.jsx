@@ -57,6 +57,7 @@ const LIST_PETS = [
     size: "médio",
     image:'https://www.patasdacasa.com.br/sites/default/files/noticias/2021/07/pitbull-8-coisas-que-voce-nao-sabia-sobre-a-raca-de-cachorro-grande.jpg'
   },
+  
 ];
 
 export { LIST_PETS };

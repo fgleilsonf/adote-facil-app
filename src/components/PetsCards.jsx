@@ -24,6 +24,7 @@ export default function PetsCards({pet, onClick}) {
       sx={{
         minWidth: 112,
         minHeight: 90,
+        maxHeight: 250,
         cursor: "pointer",
         backgroundColor: "#dcdcdc",
         borderRadius: "20px",
@@ -38,8 +39,13 @@ export default function PetsCards({pet, onClick}) {
 
 
       <CardContent>
-        <Typography variant="h5" component="div">
-          {pet.name} {pet.gender === true ? <MaleIcon/> : <FemaleIcon/>}
+        <Typography variant="h5" component="div"
+        style={{fontFamily:"Poppins", fontSize:"125%"}}>
+          {pet.name}
+        </Typography>
+        <Typography variant="h5" component="div"
+        style={{fontFamily:"Poppins", fontSize:"100%"}}>
+          {pet.gender === true ? <MaleIcon/> : <FemaleIcon/>}
         </Typography>
         <Typography sx={{mb: 5.0}} color="text.secondary"></Typography>
         <Typography variant="body2"></Typography>
