@@ -5,8 +5,40 @@
     margin: 0;
 }
 body{
-    box-sizing: border-box;}
+    box-sizing: border-box;
+}
 
+#box{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: #27c9ff;
+    max-width: 100vw;
+    
+    
+}
+#conteúdo{
+    display: flex;
+    flex-direction: row;
+}
+#esquerda{
+    max-width: 50%;
+    left: 0;
+}
+#direita{
+    width: 80%;
+    flex-direction: unset;
+    right: 0;
+}
+#boxBanner{
+    max-width: 600px;
+    top: 15vh;
+    right: 0;
+}
+
+#text1, #text2{
+    margin-left: 4vw;
+}
 
 section{
     position: relative;
@@ -45,7 +77,6 @@ section{
     color: #ff8200;
     font-size: 3.0em;
     margin-bottom: 10px;
-    font-weight: 700;
     font-family: "Poppins", sans-serif;
     font-weight: 800;
     font-style: normal;
@@ -53,16 +84,14 @@ section{
 
 .container .text h1 span{
     font-size: 0.8em;
-    font-weight: 400;
     color: #fff;
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-style: normal;
 }
-
-.bts{
-    margin-top: 80px;
-
+.Bts{
+    margin-left: 5vw;
+    position: static absolute;
 }
 .Bt{
     display: flex;
@@ -75,43 +104,119 @@ section{
     background-color: #ff8200;
     border: none;
     border-radius: 30px;
-    transition: 0.2s ease-in-out;
+    transition: 0.1s ease-in-out;
     font-size: 22px;
     font-family: "Poppins", sans-serif;
-    font-weight: 800;
+    font-weight: 700;
     font-style: normal;
     color: #fff;
     box-shadow: 3px 4px 20px rgba(1, 13, 26, 0.301);
+    position: relative;
 }
-
-.container .text .Bt:hover{
-    transform:  transLateY(10px);
-    background: #fff2e5;
-    color: #ff8200;
-
+.Bt:hover{
+    transform: translateY(-5px)
+}
+.img2{
+    filter: drop-shadow(10px 5px 4px #1c9ac0);
+    width: 70%;
+    height: 70%;
+    
+}
+@media only screen and (max-width: 1060px){
+    #box{
+        background-color: red;
+    }
+    #text1 {
+        font-size: 40px;
+    }
+    #text2{
+        font-size: 30px;
+    }
+    .img2{
+        width: 300px;
+        height: 300px;
+    }
+}
+@media only screen and (min-height: 1000px){
+    #box{
+        background-color: blue;
+    }
+    #conteúdo{
+        flex-direction: column;
+    }
+    #esquerda{
+        max-width: 100%;
+    }
+    #tex1, text2{
+        width: 300px;
+    }
+    #text1{
+        font-size: 3em;
+    }
+    #text2{
+        font-size: 35px;
+    }
+    #boxBanner{
+        top: 8vh;
+    }
 
 }
-.boxImg{
-
-    bottom: -20vh;
-    right: -400px;
+@media only screen and (max-height: 600px){
+    #box{
+        background-color: yellowgreen;
+    }
+    #text1{
+        font-size: 2em;
+    }
+    #text2{
+        font-size: 25px;
+    }
+    .Bt{
+        margin-top: 35px;
+        width: 220px;
+        height: 45px;
+        font-size: 18px;
+    }
+    #esquerda{
+        padding-top: 0;
+        height: auto;
+    }
+    
 }
-.boxImg .img1{
-    width: 600px;
-    height: 600px;
-    bottom: -20vh;
-    right: 0;
-    position: absolute;
+@media only screen and (max-width: 650px){
+    #direita{
+        display: none;
+    }
+    #esquerda{
+        max-width: 100%;}
+    #text1{
+        font-size: 2.5em;
+    }
+    #text2{
+        font-size: 30px;
+    }
+    .Bt{
+        margin-top: 35px;
+        width: 220px;
+        height: 45px;
+        font-size: 18px;
+    }
 }
-.boxImg .img2{
-
-    right: auto;
-    width: 500px;
-    height: 500px;
+@media only screen and (max-width: 500px){
+    #box{
+        background-color: brown;
+    }
+    .img1_mobile{
+        right: 80px;
+    }
+    #img{
+        position: relative;
+        margin-top: 0px;
+        bottom: 0;
+        right: 30px;
+    }
+    #imgs{
+        bottom: 0;
+        right: 0;
+    }
 }
-
-
-
-
-
-
