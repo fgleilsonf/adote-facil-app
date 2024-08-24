@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
     
 }
 #conteúdo{
@@ -11,6 +13,7 @@
 }
 .content{
   box-shadow: 2px 2px 25px rgb(122, 122, 122);
+  height: 100vh;
 }
 .pet-image {
     object-fit: contain;
@@ -48,8 +51,8 @@
   border-bottom-right-radius: 0;
   right: 0;
   position: absolute;
-  padding-left: 8%;
-  padding-right: 8%;
+  padding-left: 5%;
+  padding-right: 5%;
   font-size: 20px;
   font-weight: 500;
 

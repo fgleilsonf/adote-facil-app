@@ -25,7 +25,7 @@ function App() {
           Grid para os cards dos animais na página principal
           */
           items.map((pet) => (
-            <Grid item xs={6} md={2} sm={8} key={pet.name}>
+            <Grid item xs={6} md={2.5} sm={8} key={pet.name}>
               <PetDetails pet={pet}/>
             </Grid>
           ))
