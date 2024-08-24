@@ -12,6 +12,7 @@ import MaleIcon from "@mui/icons-material/Male";
 import FemaleIcon from "@mui/icons-material/Female";
 import "../assets/styles/PetDetails.css";
 import FormDialogContact from "../FormDialogContact.jsx";
+import Box from "@mui/material/Box";
 
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
@@ -54,44 +55,47 @@ export default function PetDetails({pet}) {
             </Typography>
           </Toolbar>
         </AppBar>
-        <Stack className="content">
-          <img src={pet.image} className="pet-image"/>
-          <Stack
-            className="basic-info"
-            direction="row"
-            alignItems="center"
-            spacing={2}
-          >
-            <Typography variant="h6">
-              {pet.name}{" "}
-              {pet.gender === true ? (
-                <MaleIcon className="male"/>
-              ) : (
-                <FemaleIcon className="female"/>
-              )}
-            </Typography>
-            <Typography variant="h6">{pet.age} Anos</Typography>
+        <Box id='conteúdo'>
+          <Stack className="content">
+            <img src={pet.image} className="pet-image"/>
+            <Stack direction="row" className="infor">
+              <Stack
+                className="basic-info"
+                direction="row"
+                alignItems="center"
+                spacing={3}
+              >
+                <Typography variant="h6">
+                  {pet.name}{" "}
+                  {pet.gender === true ? (
+                    <MaleIcon className="male"/>
+                  ) : (
+                    <FemaleIcon className="female"/>
+                  )}
+                </Typography>
+                <Typography variant="h6">{pet.age} Anos</Typography>
+              </Stack>
+              <Typography variant="h7" className="race">
+                  {pet.race}
+              </Typography>
+            </Stack>
 
-            <Typography variant="h7" className="race">
-              {pet.race}
-            </Typography>
+            <Stack className="description">
+              <Typography variant="h5" className="data">Descrição:</Typography>
+              <Typography variant="p">{pet.description}</Typography>
+            </Stack>
+            <Stack className="characteristics">
+              <Typography variant="h5" className="data">Características:</Typography>
+              <Typography variant="p">{pet.characteristics}</Typography>
+            </Stack>
+            <Stack display={'flex'} justifyContent={'center'} alignItems={'center'}>
+              <button className="Bt" onClick={() => {
+                setShowModalContact(true);
+              }}>Me adote
+              </button>
+            </Stack>
           </Stack>
-
-          <Stack className="description">
-            <Typography variant="h5">Descrição:</Typography>
-            <Typography variant="p">{pet.description}</Typography>
-          </Stack>
-          <Stack className="characteristics">
-            <Typography variant="h5">Características:</Typography>
-            <Typography variant="p">{pet.characteristics}</Typography>
-          </Stack>
-          <Stack display={'flex'} justifyContent={'center'} alignItems={'center'}>
-            <button className="Bt" onClick={() => {
-              setShowModalContact(true);
-            }}>Me adote
-            </button>
-          </Stack>
-        </Stack>
+        </Box>
       </Dialog>
 
       {
